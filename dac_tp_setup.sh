@@ -5,9 +5,17 @@ mkdir /tmp/dac_tp
 
 echo ""
 echo "Initializing root tree"
-for dir in home etc opt share; do 
+for dir in home etc bin opt share; do 
 	echo "  - Creating directory /tmp/dac_tp/${dir}"
 	mkdir "/tmp/dac_tp/${dir}"
+done
+
+echo ""
+echo "Initializing bin tree"
+for bin_file in "ls" "mount" "find" "systemctl" "passwd" "cat" "python3" "crontab" "sudo" "top" "su" "tail" "chage" "umount"; do
+        echo "  - Creating file /tmp/dac_tp/etc/${bin_file} with 666 mode"
+        touch "/tmp/dac_tp/bin/${bin_file}"
+        chmod 666 "/tmp/dac_tp/bin/${bin_file}"
 done
 
 echo ""
