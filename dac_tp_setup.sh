@@ -5,7 +5,7 @@ mkdir /tmp/dac_tp
 
 echo ""
 echo "Initializing root tree"
-for dir in home etc opt; do 
+for dir in home etc opt share; do 
 	echo "  - Creating directory /tmp/dac_tp/${dir}"
 	mkdir "/tmp/dac_tp/${dir}"
 done
