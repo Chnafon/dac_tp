@@ -25,7 +25,7 @@ It will create the full filesystem tree and a bunch of users and groups.
 
 The generated filesystem tree is located under /tmp/dac_tp.
 
-Three main directories are created :
+Five main directories are created :
 * **bin** : Common binaries found on any Linux machine
 * **etc** : Common files found on any Linux machine
 * **home** : Home directories for the created users
