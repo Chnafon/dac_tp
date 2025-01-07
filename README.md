@@ -30,7 +30,7 @@ Five main directories are created :
 * **etc** : Common files found on any Linux machine
 * **home** : Home directories for the created users
 * **opt** : Services directory
-    * web_service : Web service tree
+    * **web_service** : Web service tree
 * **share** : Shared directories
 
 Every files and directories, except for the `home/*` dirs are owned by your user and have the maximum permissions :
@@ -180,11 +180,32 @@ Set the owner, group and permissions of every files and directories within `/tmp
     * Read the configuration files
     * Read the log files
 * The support users must be able to :
-    - Read the log files
+    * Read the log files
 
 REMEMBER TO APPLY THE LEAST PRIVILEGE PRINCIPLE !
 
-You may need to create new groups, feel free to do so but you should be able to explain your decision.
+You may need to create new groups, feel free to do so but you have to explain your decision.
+
+#### Report
+
+Write a report about :
+* The groups you created and explain :
+    * The name you have chosen
+    * The members you have put in
+* The property you have set on files and directory
+
+You can make a Word document or a simple text file.
+
+## Delivery
+
+Run the following command :
+```shell
+ls -lR /tmp/dac_tp/ >> $HOME/dac_tp_delivery.txt
+```
+
+It will create a `dac_tp_delivery.txt` in your home directory.
+
+Copy/paste this file and the report you made for Part 5 on an USB stick and deliver it. 
 
 ## Clean up
 
